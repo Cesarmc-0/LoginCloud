@@ -1,23 +1,101 @@
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #0f1419 0%, #1a2332 50%, #0f1419 100%);
+    color: #e8eaed;
+    min-height: 100vh;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
 .container {
     flex-direction: column;
-    background-color: #e9e9e9e8;
-    background:  center no-repeat;
-    min-height: 100vh;       
-    display: flex;            
-    justify-content: center;  
-    align-items: center;      
-    padding: 1rem;  
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
 }
-.form{
+
+.form {
     display: flex;
     flex-direction: column;
-    gap: 100px;
-    padding: 3rem; ;
-    width: 450px;   
-    border: 1px solid #e5e7eb; 
-    border-radius: 8px;        
-    box-shadow: 0 4px 12px rgba(0,0,0,.06); 
-
+    gap: 20px;
+    padding: 3rem;
+    width: 100%;
+    max-width: 450px;
+    background: linear-gradient(145deg, #1e2936 0%, #2a3847 100%);
+    border: 1px solid rgba(255, 153, 0, 0.2);
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
 }
 
-h1.color { color: #1e4164; }
+h1.color {
+    color: #FF9900;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 1rem;
+}
+
+/* Inputs y Selects */
+.form-control,
+.form-select {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 153, 0, 0.3);
+    color: #e8eaed;
+    padding: 12px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: #FF9900;
+    color: #ffffff;
+    box-shadow: 0 0 0 0.2rem rgba(255, 153, 0, 0.25);
+    outline: none;
+}
+
+.form-control::placeholder {
+    color: #8a8d91;
+}
+
+.form-select option {
+    background: #232F3E;
+    color: #e8eaed;
+}
+
+/* Enlaces */
+a {
+    color: #FF9900;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    margin: 0 10px;
+}
+
+a:hover {
+    color: #ffb84d;
+    text-decoration: underline;
+}
+
+/* Botones */
+.btn-primary {
+    background: linear-gradient(135deg, #FF9900 0%, #ffb84d 100%);
+    border: none;
+    color: #232F3E;
+    font-weight: 600;
+    padding: 12px 30px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(255, 153, 0, 0.4);
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #ffb84d 0%, #FF9900 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(255, 153, 0, 0.5);
+    color: #232F3E;
+}

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios AWS - Amazon Web Services</title>
+    <link rel="stylesheet" href="cloud.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="container">
+            <h2 class="text-center mb-4">Servicios de Amazon Web Services</h2>
+        </div>
+    </div>
+
+    <!-- Carousel Section -->
+    <div class="carousel-section">
+        <div class="container">
+            <div id="carruselAWS" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                <!-- Indicators -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carruselAWS" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carruselAWS" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carruselAWS" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#carruselAWS" data-bs-slide-to="3"></button>
+                </div>
+
+                <!-- Carousel Images -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active rounded">
+                        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&h=600&fit=crop"
+                            class="d-block w-100" alt="AWS Lambda">
+                        <div class="carousel-caption">
+                            <h5>AWS Lambda</h5>
+                            <p>Computación serverless sin gestión de servidores</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item rounded">
+                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&h=600&fit=crop"
+                            class="d-block w-100" alt="AWS EC2">
+                        <div class="carousel-caption">
+                            <h5>Amazon EC2</h5>
+                            <p>Servidores virtuales escalables en la nube</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item rounded">
+                        <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=1200&h=600&fit=crop"
+                            class="d-block w-100" alt="AWS S3">
+                        <div class="carousel-caption">
+                            <h5>Amazon S3</h5>
+                            <p>Almacenamiento de objetos ilimitado y seguro</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item rounded">
+                        <img src="https://images.unsplash.com/photo-1639322537228-f710d846310a?w=1200&h=600&fit=crop"
+                            class="d-block w-100" alt="AWS RDS">
+                        <div class="carousel-caption">
+                            <h5>Amazon RDS</h5>
+                            <p>Bases de datos relacionales administradas</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carruselAWS" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carruselAWS" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <div class="services-container">
+        <div class="container">
+            <h2 class="section-title">Nuestros Principales Servicios</h2>
+            <div class="services-grid">
+                <!-- AWS Lambda -->
+                <div class="service-card">
+                    <div class="service-icon lambda-icon">λ</div>
+                    <h3 class="service-title">AWS Lambda</h3>
+                    <p class="service-category">Computación Serverless</p>
+                    <p class="service-description">
+                        Ejecuta código sin aprovisionar servidores. Paga solo por el tiempo de computación consumido.
+                    </p>
+                    <ul class="service-features">
+                        <li>✓ Escalado automático</li>
+                        <li>✓ Pago por uso</li>
+                        <li>✓ Alta disponibilidad</li>
+                    </ul>
+                </div>
+
+                <!-- Amazon EC2 -->
+                <div class="service-card">
+                    <div class="service-icon ec2-icon">☁</div>
+                    <h3 class="service-title">Amazon EC2</h3>
+                    <p class="service-category">Servidores Virtuales</p>
+                    <p class="service-description">
+                        Capacidad de computación segura y redimensionable para ejecutar aplicaciones en la nube.
+                    </p>
+                    <ul class="service-features">
+                        <li>✓ Instancias flexibles</li>
+                        <li>✓ Control completo</li>
+                        <li>✓ Múltiples regiones globales</li>
+                    </ul>
+                </div>
+
+                <!-- Amazon S3 -->
+                <div class="service-card">
+                    <div class="service-icon s3-icon">◈</div>
+                    <h3 class="service-title">Amazon S3</h3>
+                    <p class="service-category">Almacenamiento de Objetos</p>
+                    <p class="service-description">
+                        Almacenamiento ilimitado para respaldo, archivo y análisis de big data con alta durabilidad.
+                    </p>
+                    <ul class="service-features">
+                        <li>✓ Durabilidad 99.999999999%</li>
+                        <li>✓ Almacenamiento ilimitado</li>
+                        <li>✓ Cifrado y versionado</li>
+                    </ul>
+                </div>
+
+                <!-- Amazon RDS -->
+                <div class="service-card">
+                    <div class="service-icon rds-icon">⚡</div>
+                    <h3 class="service-title">Amazon RDS</h3>
+                    <p class="service-category">Bases de Datos Relacionales</p>
+                    <p class="service-description">
+                        Configura y administra bases de datos relacionales en la nube con facilidad y eficiencia.
+                    </p>
+                    <ul class="service-features">
+                        <li>✓ MySQL, PostgreSQL, Oracle</li>
+                        <li>✓ Backups automáticos</li>
+                        <li>✓ Alta disponibilidad</li>
+                    </ul>
+                </div>
+
+                <!-- Amazon CloudFront -->
+                <div class="service-card">
+                    <div class="service-icon cloudfront-icon">🌐</div>
+                    <h3 class="service-title">Amazon CloudFront</h3>
+                    <p class="service-category">CDN Global</p>
+                    <p class="service-description">
+                        Red de distribución de contenido que entrega datos con baja latencia y altas velocidades.
+                    </p>
+                    <ul class="service-features">
+                        <li>✓ 450+ puntos de presencia</li>
+                        <li>✓ Baja latencia</li>
+                        <li>✓ Seguridad integrada</li>
+                    </ul>
+                </div>
+
+                <!-- Amazon DynamoDB -->
+                <div class="service-card">
+                    <div class="service-icon dynamodb-icon">💾</div>
+                    <h3 class="service-title">Amazon DynamoDB</h3>
+                    <p class="service-category">Base de Datos NoSQL</p>
+                    <p class="service-description">
+                        Base de datos NoSQL totalmente administrada para aplicaciones que requieren baja latencia.
+                    </p>
+                    <ul class="service-features">
+                        <li>✓ Rendimiento predecible</li>
+                        <li>✓ Escalabilidad automática</li>
+                        <li>✓ Totalmente administrada</li>
+                    </ul>
+                </div>
+
+                <!-- Amazon VPC -->
+                <div class="service-card">
+                    <div class="service-icon vpc-icon">🔒</div>
+                    <h3 class="service-title">Amazon VPC</h3>
+                    <p class="service-category">Red Virtual Privada</p>
+                    <p class="service-description">
+                        Lanza recursos de AWS en una red virtual aislada y segura que tú defines.
+                    </p>
+                    <ul class="service-features">
+                        <li>✓ Control total de red</li>
+                        <li>✓ Aislamiento de seguridad</li>
+                        <li>✓ Conexión con tu red local</li>
+                    </ul>
+                </div>
+
+                <!-- Amazon SageMaker -->
+                <div class="service-card">
+                    <div class="service-icon sagemaker-icon">🤖</div>
+                    <h3 class="service-title">Amazon SageMaker</h3>
+                    <p class="service-category">Machine Learning</p>
+                    <p class="service-description">
+                        Crea, entrena y despliega modelos de machine learning a escala con herramientas integradas.
+                    </p>
+                    <ul class="service-features">
+                        <li>✓ Notebooks integrados</li>
+                        <li>✓ Entrenamiento distribuido</li>
+                        <li>✓ Despliegue automático</li>
+                    </ul>
+                </div>
+
+                <!-- AWS CloudWatch -->
+                <div class="service-card">
+                    <div class="service-icon cloudwatch-icon">📊</div>
+                    <h3 class="service-title">AWS CloudWatch</h3>
+                    <p class="service-category">Monitoreo y Observabilidad</p>
+                    <p class="service-description">
+                        Monitorea aplicaciones, responde a cambios de rendimiento y optimiza recursos.
+                    </p>
+                    <ul class="service-features">
+                        <li>✓ Métricas en tiempo real</li>
+                        <li>✓ Alarmas automáticas</li>
+                        <li>✓ Logs centralizados</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 Amazon Web Services. Todos los servicios están sujetos a disponibilidad.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
